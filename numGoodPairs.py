@@ -1,6 +1,8 @@
 # 1512. Number of Good Pairs
 # https://leetcode.com/problems/number-of-good-pairs/
 
+from typing import List
+
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         count = 0
@@ -8,5 +10,9 @@ class Solution:
             for j in range(i+1, len(nums)):
                 if nums[i] == nums[j]:
                     count += 1
-
+        print(count)
         return count
+
+nums = [1, 2, 3, 1, 1, 3]
+s = Solution()
+s.numIdenticalPairs(nums)
