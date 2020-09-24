@@ -1,3 +1,5 @@
 # Python_Algorithm
 
-LeetCode - Start with easy and highest acceptance
+## LeetCode
+* Difficulty: Easy and Medium
+* Acceptance: Start with highest percent
