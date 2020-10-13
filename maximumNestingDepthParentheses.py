@@ -4,19 +4,22 @@
 class Solution:
     def maxDepth(self, s: str) -> int:
         sList  = list(s)
-        leftNest = 0
-        rightNest = 0
+        currentNest = 0
         result = []
+
+        # max 함수로 비교
+        #ans = 0
 
         for value in sList:
             if value == '(':
-                leftNest += 1
+                currentNest += 1
             elif value == ')':
-                rightNest -= 1
-            result.append(leftNest + rightNest)
+                currentNest -= 1
+            #ans = max(currentNest,ans)
+            result.append(currentNest)
 
-        print(result)
-        return max(result)
+        print(max(result))
+        #return max(result)
 
 
 
